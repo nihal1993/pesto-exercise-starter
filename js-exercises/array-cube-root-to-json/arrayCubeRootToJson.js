@@ -4,21 +4,26 @@ const arrayCubeRootToJson = arr => {
   let str;
 
   if (Object.keys(arr).length === 0 || arr.filter(Boolean).length === 0) {
-    throw "Parameter is not a number!";
-  }
-  for (let num of arr) {
-    if (typeof (num) !== Number) {
-      throw "Parameter is not a number!";
-      console.log('hi');
-    } else {
-      str = num.toString();
-      store[str] = Math.cbrt(num);
-    }
+    throw "";
   }
 
-  return JSON.stringify(store);
+  arr.forEach((num) => {
+   
+    if (num !== Infinity && isNaN(parseInt(num))) {
+      throw "";
+
+    } else {
+      str = num.toString();
+      if (!isNaN(parseInt(num))) {
+        num = parseInt(num);
+      }
+      store[str] = Math.cbrt(num);
+    }
+  })
+
+  return store;
 
 
 };
-
+//console.log(arrayCubeRootToJson([1, 2.12, 4.44, 'abc']));
 export { arrayCubeRootToJson };
