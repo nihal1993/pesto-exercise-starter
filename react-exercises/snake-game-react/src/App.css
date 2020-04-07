@@ -1,0 +1,74 @@
+
+.game-bg{
+ background-image: url('/b.jpeg') ; 
+ background-image:no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+ min-height: 100%;
+ min-width: 1024px;
+ width: 100%;
+ height: auto;
+ position: fixed;
+ top: 0;
+ left: 0;
+ 
+}
+.game-area {
+
+	position: relative;
+	margin :50px auto 10px auto;
+	width:400px;
+	height:400px;
+	box-shadow: 1px 2px 18px #D0D3D4;
+}
+
+.scoreCard{
+  position: relative;
+	margin :10px auto;
+	width:400px;
+	height:40px;
+  box-shadow: 1px 2px 18px white;
+  padding: auto auto ;
+  text-align: center;
+  font-weight: bold;
+}
+
+.snake-dot {
+	position :absolute;
+	width:2%;
+	height:2%;
+	background-color: #000;
+	border:1px solid white;
+	z-index:1;
+}
+
+.snake-food {
+	position :absolute;
+	width:2%;
+	height:2%;
+	background-color: red;
+	border:1px solid #fff;
+	z-index:1;
+}
+
+.show-big{
+	font-size: 30px;
+	text-align: center;
+	color:grey;
+	font-family: bold
+}
+
+.buttonClass{
+	 background-color: #4CAF50; /* Green */
+	  border: none;
+	  color: white;
+	  padding: 15px 32px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  margin: 4px 2px;
+	  cursor: pointer;
+}
+
